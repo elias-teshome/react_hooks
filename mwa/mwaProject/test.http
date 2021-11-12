@@ -1,0 +1,21 @@
+POST http://localhost:3000/fill HTTP/1.1
+content-type: application/json
+
+{
+    "_id": 3, 
+    "name":"Web Application Development", 
+    "code":"CS569"
+}
+###
+GET http://localhost:3000/courses
+
+###
+PATCH http://localhost:3000/courses/1 HTTP/1.1
+content-type: application/json
+
+{ "name": "modern web application",
+  "code":"CS720" 
+} 
+
+###
+DELETE http://localhost:3000/courses/1 HTTP/1.1
